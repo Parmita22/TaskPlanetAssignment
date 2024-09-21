@@ -1,0 +1,71 @@
+.social-media-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(69, 155, 236, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    align-items: center;
+    
+    height: 100px;
+  
+    width: 140px;
+   
+    transition: transform 0.3s;
+}
+
+.social-media-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: rgba(252, 248, 248, 0.3);
+  
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+  
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+   
+    max-width: 1400px;
+    
+}
+
+.social-media-card img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.social-media-card h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #111;
+}
+
+.social-media-card .tasks {
+    font-size: 16px;
+    color: #666;
+}
+
+.social-media-card .btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #3c85e6;
+    color: #fff;
+    font-size: 12px;
+    transition: background-color 0.3s;
+}
+
+.social-media-card .btn:hover {
+    background-color: #333;
+}
+
+.social-media-card:hover {
+    transform: translateY(-10px);
+}

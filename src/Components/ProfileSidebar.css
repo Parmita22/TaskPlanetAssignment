@@ -1,0 +1,273 @@
+/* General Sidebar Styling */
+.profile-sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 310px;
+    background-color: rgba(252, 248, 248, 0.3);
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: -3px 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .profile-sidebar {
+        width: 250px; /* Reduce sidebar width for smaller screens */
+    }
+
+    .profile-section .profile-image {
+        width: 60px;
+        height: 60px; /* Smaller profile image */
+    }
+
+    .profile-buttons {
+        grid-template-columns: 1fr; /* Single column layout for buttons */
+        gap: 10px; /* Smaller gap between buttons */
+    }
+
+    .refer-buttons {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller screens */
+    }
+
+    .membership-buttons {
+        flex-direction: column; /* Stack membership buttons vertically */
+    }
+
+    .membership-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .profile-sidebar {
+        width: 200px; /* Narrow sidebar for very small screens */
+        padding: 15px; /* Adjust padding for smaller space */
+    }
+
+    .profile-section .profile-name {
+        font-size: 16px; /* Reduce font size for smaller screens */
+    }
+
+    .profile-button,
+    .refer-button {
+        font-size: 12px; /* Reduce button font size */
+        padding: 5px; /* Less padding for smaller space */
+    }
+
+    .profile-buttons {
+        gap: 8px; /* Smaller gap between buttons */
+    }
+}
+
+/* Profile Section */
+.profile-section {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+    font-size: 18px;
+    color: rgb(251, 248, 248);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Rank and Points */
+.rank-points {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 8px 0;
+    border-radius: 10px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rank,
+.points {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: rgb(252, 245, 245);
+    font-weight: bold;
+}
+
+.icon-rank,
+.icon-points {
+    margin-right: 5px;
+    font-size: 18px;
+    color: #fcfbf9;
+}
+
+/* Profile Buttons Section */
+.profile-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 15px; /* Space between buttons */
+}
+
+.profile-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.profile-button .icon {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.profile-button:hover {
+    background-color: rgba(224, 41, 41, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Share Your Refer Link Section */
+.refer-link-section {
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.refer-link-section h4 {
+    text-align: center;
+    color: rgb(63, 63, 63);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.refer-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.refer-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.refer-button .icon {
+    font-size: 20px;
+}
+
+.refer-button:hover {
+    background-color: rgba(224, 41, 41, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Premium Membership Section */
+.membership-section {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.membership-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.membership-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+    font-size: 14px;
+    transition: all 0.3s ease;
+    flex: 1;
+    margin: 5px;
+}
+
+.membership-button .icon {
+    font-size: 24px;
+}
+
+.membership-button:hover {
+    background-color: rgba(224, 41, 41, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Connected With Us Section */
+.connected-section {
+    padding: 15px;
+    background-color: rgba(254, 252, 252, 0.05);
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(235, 231, 231, 0.1);
+    text-align: center;
+}
+
+.connected-section h4 {
+    color: rgb(18, 16, 16);
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Connected Icons */
+.connected-icons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.connected-icon {
+    font-size: 24px;
+    color: #3b5998; /* Default icon color */
+    transition: all 0.3s ease;
+}
+
+.connected-icon:hover {
+    color: rgb(245, 239, 239);
+    transform: scale(1.2);
+}
+
+/* Make icons a bit darker for visibility */
+.connected-icon {
+    color: #1a1a1a; /* Darker default color */
+}
+    

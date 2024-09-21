@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2em;
+ 
+}
+
+.btn-light {
+    text-decoration: none;
+}
+
+.c-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 1em;
+}
+
+.cardt {
+    width: 600px !important;
+    display: flex;
+    flex-direction: row;
+background-color: rgba(252, 248, 248, 0.3) !important;
+    /* Glass effect */
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 1em;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+    margin: 1.5em auto;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    /* Transition for background-color */
+    height: 150px;
+}
+
+.cardt:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: rgba(255, 255, 255, 1);
+    /* Change to white on hover for clarity */
+}
+
+.cardt img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 0.7em;
+    transition: transform 0.3s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+.card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em;
+    width: 100%;
+}
+
+.text-section {
+    max-width: 60%;
+    color: #333;
+}
+
+.text-section .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.text-section .card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.4;
+    /* Improve readability */
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.cta-section .btn {
+    padding: 0.5em 1.2em;
+    border-radius: 0.5em;
+    background-color: #333;
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-section .btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+
+/* Task List Heading */
+.task-list-heading {
+    color: #222;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text-section {
+        max-width: 100%;
+    }
+
+    .cta-section {
+        align-items: center;
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-body {
+        padding: 1em;
+    }
+
+    .task-list-heading {
+        font-size: 1.75rem;
+    }
+
+    .cta-section .btn {
+        padding: 0.4em 0.9em;
+        /* Adjust button padding for smaller screens */
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .card {
+        font-size: 0.9em;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .task-list-heading {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        width: 70px;
+        height: 70px;
+        margin: 0.5em 0;
+    }
+
+    .text-section {
+        text-align: center;
+        margin-bottom: 0.8em;
+        /* Add spacing between text and CTA section */
+    }
+
+    .cta-section .btn {
+        padding: 0.4em 0.8em;
+        /* Reduce padding for smaller screens */
+    }
+}

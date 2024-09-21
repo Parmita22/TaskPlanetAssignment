@@ -1,0 +1,205 @@
+/* Main container styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.container {
+    max-width: 800px;
+    max-height: 32vh;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    font-family: 'poppins', sans-serif;
+}
+
+.heading {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.total-earnings {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #2d3436;
+    margin-bottom: 20px;
+
+}
+
+.earnings-breakdown {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #7f8c8d;
+    gap: 10px;
+}
+
+.earnings-breakdown div {
+    text-align: center;
+    border: 5px solid black;
+    padding: 5px;
+    border: 3px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    background-color: #e0e0e0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.tab.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tab:hover {
+    background-color: #2980b9;
+}
+
+.referral-details {
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.referral-tag {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.referral-date {
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 5px;
+}
+
+/* Referral breakdown */
+.referral-breakdown {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.referral-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #2c3e50;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.withdraw-button {
+    display: block;
+    width: 100%;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.withdraw-button:hover {
+    background-color: #219150;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .total-earnings {
+        font-size: 20px;
+    }
+
+    .earnings-breakdown {
+        font-size: 12px;
+    }
+
+    .tab {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .user-name {
+        font-size: 14px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+}

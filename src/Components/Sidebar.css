@@ -1,0 +1,89 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Fixes the sidebar to the left side */
+    height: 100%;
+    width: 300px;
+    background-color: rgba(252, 248, 248, 0.3);
+        /* Glass effect */
+        backdrop-filter: blur(10px);
+    /* Blur effect */
+    border-top-right-radius: 20px;
+    /* Curved borders */
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Space between nav links and logout */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Company name styling */
+.company-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Navigation link styling */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Align items in the center of the sidebar */
+    margin-top: auto;
+    margin-bottom: auto;
+    /* Vertically center the nav items */
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    justify-content: start;
+    /* Align icon and text to the start */
+}
+
+/* Icon styling */
+.nav-item .icon {
+    margin-right: 10px;
+    font-size: 22px;
+}
+
+/* Hover effect on nav items */
+.nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Active state */
+.nav-item.active {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Logout button styling */
+.logout-section {
+    margin-top: auto;
+}
+
+.nav-item.logout {
+    color: #ff4d4d;
+    /* Red color for logout button */
+}
+
+.nav-item.logout:hover {
+    background-color: rgba(255, 77, 77, 0.2);
+}
